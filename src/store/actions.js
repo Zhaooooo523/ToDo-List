@@ -1,7 +1,7 @@
 export default{
-    removeTodo({ commit }, payload) {
-        setTimeout(() => {
-          commit('removeTodo', payload);
-        }, 100);
-      },
+  removeTodo({ commit }, payload) {
+    setTimeout(() => {
+      commit('removeTodo', payload);
+    }, 100);
+  },
 };

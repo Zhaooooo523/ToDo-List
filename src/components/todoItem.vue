@@ -18,7 +18,7 @@ const handleDeleteTodo = (id) => {
     <div class="todo" :class="{ done: todo.done }">
       <div class="display">
         <input class="check" type="checkbox" v-model="todo.done" />
-       <span class="title">{{ todo.title }}</span>
+        <span class="title">{{ todo.title }}</span>
         <button @click="handleDeleteTodo(todo.id)" class="btn">刪除</button>
       </div>
     </div>

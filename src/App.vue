@@ -31,9 +31,8 @@ provide('deleteTodo', deleteTodo);
 
 <template>
 <div id="todoapp">
-    <todo-header />
+  <todo-header />
     <div class="content">
-      <!-- <todo-create @createTodo="createTodo"/> -->
       <todo-create :createTodo="createTodo" />
       <todo-list :todos="todos" />
       <todo-footer :todos="todos" :clearDone="clearDone" />

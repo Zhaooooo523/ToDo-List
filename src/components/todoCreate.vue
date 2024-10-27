@@ -4,17 +4,17 @@ import { useStore } from 'vuex';
 let newTodo = ref('')
  
 let props = defineProps({
-    createTodo: Function,
+  createTodo: Function,
 })
  
 const handleCreateTodo = ()=>{
-    let title = newTodo.value.trim()
+  let title = newTodo.value.trim()
     if (title.length > 0) {
-        props.createTodo(title);
-        newTodo.value = "";
-      } else {
-        alert("輸入不能為空");
-      }
+      props.createTodo(title);
+      newTodo.value = "";
+    }else{
+      alert("輸入不能為空");
+    }
 }
 </script>
 

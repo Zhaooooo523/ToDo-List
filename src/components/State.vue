@@ -11,23 +11,25 @@ const props = defineProps({
 </script>
 
 <template>
-   <a>
+  <a>
     <span
       @click="changeStatus('all')"
       :class="{ active: store.state.visible == 'all' }"
     >
-      全部
+    全部
     </span>
     <span
       @click="changeStatus('active')"
       :class="{ active: store.state.visible == 'active' }"
-      >未完成</span
     >
+    未完成
+    </span>
     <span
       @click="changeStatus('complete')"
       :class="{ active: store.state.visible == 'complete' }"
-      >已完成</span
     >
+    已完成
+    </span>
   </a>
 </template>
 
